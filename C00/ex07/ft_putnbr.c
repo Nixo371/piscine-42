@@ -1,5 +1,16 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nucieda- <nucieda-@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/11/20 17:47:00 by nucieda-          #+#    #+#             */
+/*   Updated: 2023/11/20 17:48:32 by nucieda-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
-#include <stdio.h>
 
 int	ft_neg_num(int nb, int i)
 {
@@ -15,7 +26,7 @@ int	ft_neg_num(int nb, int i)
 	return (0);
 }
 
-void ft_putnbr(int nb)
+void	ft_putnbr(int nb)
 {
 	char		num;
 	long int	i;
@@ -41,16 +52,5 @@ void ft_putnbr(int nb)
 	{
 		write(1, "0", 1);
 		i /= 10;
-	}
-}
-
-int main()
-{
-	int arr[7] = {0, 10, 100, -100, 6666, __INT32_MAX__, -__INT32_MAX__ - 1};
-
-	for (int i = 0; i < 7; i++)
-	{
-		ft_putnbr(arr[i]);
-		printf(" - %d\n", arr[i]);
 	}
 }

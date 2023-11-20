@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_comb.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nucieda- <nucieda-@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/11/20 17:47:09 by nucieda-          #+#    #+#             */
+/*   Updated: 2023/11/20 17:49:03 by nucieda-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
 
-void ft_write_comb(char a, char b, char c)
+void	ft_write_comb(char a, char b, char c)
 {
 	write(1, &a, 1);
 	write(1, &b, 1);
@@ -8,7 +20,7 @@ void ft_write_comb(char a, char b, char c)
 	write(1, ", ", 2);
 }
 
-void ft_print_comb(void)
+void	ft_print_comb(void)
 {
 	char	a;
 	char	b;
