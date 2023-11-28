@@ -6,7 +6,7 @@
 /*   By: nucieda- <nucieda-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 17:47:00 by nucieda-          #+#    #+#             */
-/*   Updated: 2023/11/20 17:48:32 by nucieda-         ###   ########.fr       */
+/*   Updated: 2023/11/26 14:21:30 by nucieda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void	ft_putnbr(int nb)
 		nb = -(nb % i);
 		i /= 10;
 	}
-	while (nb / i)
+	while (i > 0 && nb / i)
 	{
 		num = (char)((nb / i) + 48);
 		write(1, &num, 1);

@@ -6,11 +6,13 @@
 /*   By: nucieda- <nucieda-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 17:47:22 by nucieda-          #+#    #+#             */
-/*   Updated: 2023/11/20 17:49:18 by nucieda-         ###   ########.fr       */
+/*   Updated: 2023/11/26 15:52:42 by nucieda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
+
 void	ft_print_alphabet(void)
 {
-	write(1, "abcdefghijklmnopqrstuvwxyz\n", 27);
+	write(1, "abcdefghijklmnopqrstuvwxyz", 26);
 }

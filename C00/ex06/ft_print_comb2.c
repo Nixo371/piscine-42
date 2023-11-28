@@ -6,7 +6,7 @@
 /*   By: nucieda- <nucieda-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 17:47:03 by nucieda-          #+#    #+#             */
-/*   Updated: 2023/11/20 17:48:43 by nucieda-         ###   ########.fr       */
+/*   Updated: 2023/11/26 11:49:16 by nucieda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,8 @@ void	ft_write_comb2(int a, int b)
 	write(1, " ", 1);
 	write(1, &b1, 1);
 	write(1, &b2, 1);
-	write(1, ", ", 2);
+	if (a < 98)
+		write(1, ", ", 2);
 }
 
 void	ft_print_comb2(void)

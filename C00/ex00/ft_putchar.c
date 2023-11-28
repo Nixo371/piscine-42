@@ -6,9 +6,11 @@
 /*   By: nucieda- <nucieda-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 17:47:24 by nucieda-          #+#    #+#             */
-/*   Updated: 2023/11/20 17:49:21 by nucieda-         ###   ########.fr       */
+/*   Updated: 2023/11/26 13:25:44 by nucieda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <unistd.h>
 
 void	ft_putchar(char c)
 {
