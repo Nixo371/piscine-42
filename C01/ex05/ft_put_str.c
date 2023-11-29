@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_put_str.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nucieda- <nucieda-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nucieda- <nucieda-@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 18:04:21 by nucieda-          #+#    #+#             */
-/*   Updated: 2023/11/20 18:39:05 by nucieda-         ###   ########.fr       */
+/*   Updated: 2023/11/29 21:41:19 by nucieda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <unistd.h>
 
 void	ft_putstr(char *str)
 {
