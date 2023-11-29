@@ -6,7 +6,7 @@
 /*   By: nucieda- <nucieda-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 14:16:55 by nucieda-          #+#    #+#             */
-/*   Updated: 2023/11/28 14:25:53 by nucieda-         ###   ########.fr       */
+/*   Updated: 2023/11/29 16:10:16 by nucieda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,9 @@ int main()
 	char	s2;
 	char	s3;
 
-	s = ft_str_is_alpha(str) + '0';
-	s2 = ft_str_is_alpha(str2) + '0';
-	s3 = ft_str_is_alpha(str3) + '0';
+	s = ft_str_is_numeric(str) + '0';
+	s2 = ft_str_is_numeric(str2) + '0';
+	s3 = ft_str_is_numeric(str3) + '0';
 
 	write(1, &s, 1);
 	write(1, " - str\n", 8);
