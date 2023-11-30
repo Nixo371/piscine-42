@@ -6,11 +6,9 @@
 /*   By: nucieda- <nucieda-@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/29 19:53:23 by nucieda-          #+#    #+#             */
-/*   Updated: 2023/11/29 21:40:30 by nucieda-         ###   ########.fr       */
+/*   Updated: 2023/11/30 18:26:17 by nucieda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 int	ft_strlen(char *s)
 {
@@ -19,36 +17,29 @@ int	ft_strlen(char *s)
 	i = 0;
 	while (s[i])
 		i++;
-	if (i == 0)
-		return (-1);
 	return (i);
 }
 
 unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 {
-	int	ret;
-	int	s;
+	unsigned int	i;
+	unsigned int	j;
 
-	s = size;
-	ret = 0;
-	while (s-- && *dest != '\0')
+	i = 0;
+	j = 0;
+	if (size == 0)
+		return (ft_strlen(src));
+	if ((int)size < ft_strlen(dest))
+		return (size + ft_strlen(src));
+	while (dest[i] && i < size - 1)
+		i++;
+	while (src[j] && (i + j) < size - 1)
 	{
-		dest++;
-		ret++;
+		dest[i + j] = src[j];
+		j++;
 	}
-	printf("s: %d\n", s);
-	s = size - ret;
-	if (s <= 0)
-		return (ret + ft_strlen(src) + 1);
-	ret += ft_strlen(src);
-	while (*src && s-- > 1)
-	{
-		*dest = *src;
-		dest++;
-		src++;
-	}
-	*dest = '\0';
-	return (ret + 1);
+	dest[i + j] = '\0';
+	return (i + ft_strlen(src));
 }
 
 /*
